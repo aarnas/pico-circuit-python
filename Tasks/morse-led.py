@@ -5,10 +5,10 @@ import digitalio
 led = digitalio.DigitalInOut(board.GP16)
 led.direction = digitalio.Direction.OUTPUT
 
-b_long = 0.5#0.6			# Long Blink duration
-b_short = 0.2#0.2			# Short Blink duration
-w_wait = 0.5#1				# Wait duration between words
-a_wait = 0.25#0.6			# Wait duration between alphas
+b_long = 0.5			# Long Blink duration
+b_short = 0.2			# Short Blink duration
+w_wait = 0.5			# Wait duration between words
+a_wait = 0.25			# Wait duration between alphas
 
 m = ".- -... -.-. -.. . ..-. --. .... .. .--- -.- .-.. -- -. --- .--. --.- .-. ... - ..- ...- .-- -..- -.-- --.."
 morse = m.split(" ")

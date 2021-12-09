@@ -1,4 +1,7 @@
-# Raspberry Pi Pico CircuitPython projects
+<h1 align="center"> 
+  <p>Raspberry Pi Pico CircuitPython projects</p>
+  <img src="https://user-images.githubusercontent.com/44366184/145348534-7f5bd0f3-933b-49c3-9c08-f3fa1c076dc0.png" height="500"/>
+</h1>
 
 ## Setup for all projects to work
 

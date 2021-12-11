@@ -1,4 +1,8 @@
-# Pico Ducky
+
+<h1 align="center"> 
+  <p>Raspberry Pi Pico Ducky</p>
+<img src="https://user-images.githubusercontent.com/44366184/145346110-89d29bc8-0b55-43d5-a325-478492ba117d.png" height="500" />
+</h1>
 
 ## Install
 

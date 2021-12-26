@@ -11,9 +11,7 @@
 
 3. Copy the `.uf2` file to the root of the Pico (`RPI-RP2`). The device will reboot and after a second or so, it will reconnect as `CIRCUITPY`.
 
-4. Download `adafruit-circuitpython-bundle-7.x-mpy-YYYYMMDD.zip` [here](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases/latest) and extract it outside the device.
-
-4. Option 2, Use lib folder files.
+4. Download `adafruit-circuitpython-bundle-7.x-mpy-YYYYMMDD.zip` [here](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases/latest) and extract it outside the device. Option 2, use lib folder files.
 
 5. Navigate to `lib` and copy `adafruit_hid` to the `lib` folder in your Raspberry Pi Pico.
 

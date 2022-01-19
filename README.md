@@ -16,4 +16,4 @@
 5. Navigate to `lib` and copy `adafruit_hid` to the `lib` folder in your Raspberry Pi Pico.
 
 ## Extras
-To restore your pico, use `flash_nuke.uf2` from uf2 folder.
+To restore your pico, use `flash_nuke.uf2` from uf2 folder. To be able to put uf2, hold `boot button` while connecting pico.

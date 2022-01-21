@@ -63,7 +63,7 @@ def sendString(line):
 
 def parseLine(line):
     global defaultDelay
-    if(line[0:3] == "REM"):
+    if(line[0:3] == "#"):
         # ignore ducky script comments
         pass
     elif(line[0:5] == "DELAY"):
@@ -79,7 +79,7 @@ def parseLine(line):
         runScriptLine(newScriptLine)
 
 def runDuckyScript(filename):
-    f = open('duckyScripts/'+filename,"r",encoding='utf-8')
+    f = open(scriptsLib+'/'+filename,"r",encoding='utf-8')
     previousLine = ""
     duckyScript = f.readlines()
     for line in duckyScript:
@@ -105,6 +105,10 @@ for btn in buttons:
 # Last Pressed
 last_pressed = [0 for _ in button_pins]
 
+pressed = []
+
+scriptsLib = 'duckyScripts/mac'
+
 while True:
     for ix, btn in enumerate(buttons):
         if not btn.value:
@@ -112,7 +116,18 @@ while True:
     
     for ix, lp in enumerate(last_pressed):
         if lp == 25:
-            runDuckyScript(button_mapping[ix])
+            if ix not in pressed:
+                pressed.append(ix)
+
+    for ix, lp in enumerate(last_pressed):
+        if lp == 1 and ix in pressed:
+                pressed.remove(ix)
+
+    if 0 in pressed and 1 in pressed:
+        scriptsLib = 'duckyScripts/mac'
+
+    if 1 in pressed and 2 in pressed:
+        scriptsLib = 'duckyScripts/windows'
 
     last_pressed = [max(0, lp - 1) for lp in last_pressed]
 

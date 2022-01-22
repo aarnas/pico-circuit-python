@@ -118,6 +118,7 @@ while True:
         if lp == 25:
             if ix not in pressed:
                 pressed.append(ix)
+                runDuckyScript(button_mapping[ix])
 
     for ix, lp in enumerate(last_pressed):
         if lp == 1 and ix in pressed:

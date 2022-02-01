@@ -1,7 +1,8 @@
 
 <h1 align="center"> 
   <p>Raspberry Pi Pico Ducky MacroPad</p>
-<img src="" height="500" />
+<img src="https://user-images.githubusercontent.com/44366184/151918985-725e82f5-ea5b-4967-bcd0-7b3cf5fcfa94.jpeg" height="500" />
+  
 </h1>
 
 ## Install
